@@ -1,0 +1,12 @@
+service:
+  celery_log:
+    celery_path: ./log
+    celery_type: celery
+    celery_name: celery.log
+celery:
+  broker_url: redis://localhost:6379/0
+  flower: http://127.0.0.1:5555
+  password:
+statsd:
+  statsd_host: 127.0.0.1
+  statsd_port: 8125
